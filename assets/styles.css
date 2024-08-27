@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* common */
+.section-desc-level-3 {
+  color: #696d76;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.71;
+}
+
+.section-desc-title {
+  color: #696d77;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.section-desc-level-1 {
+  color: #696d76;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6667;
+}
+
+.btn {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.75;
+  padding: 12px 28px;
+  background: #000;
+  border-radius: 6px;
+  display: inline-block;
+  transition: opacity 0.25s ease-out;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Header */
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 102.68px;
+}
+
+.header__nav-link ul {
+  display: flex;
+  list-style: none;
+}
+
+.header__link-item {
+  display: block;
+  color: #696d76;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.75;
+  padding: 24px;
+}
+
+.header__link-item:hover {
+  color: #212832;
+  font-weight: 600;
+  text-shadow: 1px 0 0 0 currentColor;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  text-decoration-color: #7264d6; /* Đổi màu underline */
+  text-decoration-thickness: 2px; /* Độ dày của underline */
+}
+
+.header__link-active {
+  color: #212832;
+  font-weight: 600;
+  text-shadow: 1px 0 0 0 currentColor;
+}
+
+.header__button {
+  justify-self: flex-end;
+  margin-left: auto;
+}
+
+.login {
+  color: #212832;
+  display: inline-block;
+  margin-right: 28px;
+}
+
+/* Hero */
+.hero {
+  margin-top: 76px;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Hero-content */
+.hero__content {
+  width: 540px;
+}
+
+.hero__heading {
+  color: #212832;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.16;
+  margin: 12px;
+}
+
+.hero__heading strong {
+  color: #7264d6;
+}
+
+.hero__desc {
+  margin-top: 20px;
+}
+
+.hero__mail {
+  margin-top: 40px;
+}
+
+.hero__desc-level-3 {
+  margin-top: 20px;
+}
