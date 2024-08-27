@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -130,7 +132,7 @@ a {
   font-size: 6rem;
   font-weight: 700;
   line-height: 1.16;
-  margin: 12px;
+  margin-top: 16px;
 }
 
 .hero__heading strong {
@@ -147,4 +149,18 @@ a {
 
 .hero__desc-level-3 {
   margin-top: 20px;
+}
+
+
+.hero__mail-input {
+  border: none;
+  outline: none;
+}
+
+.hero__mail {
+  padding: 8px 8px 8px 23px;
+  background-color: #FFF;
+  box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+  display: inline-block;
+  border-radius: 8px;
 }
