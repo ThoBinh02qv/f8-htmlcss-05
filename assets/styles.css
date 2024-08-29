@@ -799,12 +799,19 @@ li.wallet__items {
   column-gap: 30px;
 }
 
+/* .testimonial__list {
+  display: flex;
+  flex-shrink: 0;
+} */
+
 .testimonial__comments {
   padding: 28px 42px;
   position: relative;
   background: #fff;
   filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
-  border-radius: 1px solid #dfe2e8;
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.05);
 }
 
 .testimonial__comments-desc {
@@ -817,10 +824,6 @@ li.wallet__items {
   z-index: 2;
   position: relative;
   background: #fff;
-}
-
-.testimonial__comments {
-  position: relative;
 }
 
 .testimonial__comments::after {
@@ -845,6 +848,29 @@ li.wallet__items {
   border: 1px solid #dfe2e8;
   border-left: none;
   border-top: none; */
+
+}
+
+.testimonial__comments-active {
+  border: 1px solid #7264d6;
+  
+}
+
+.testimonial__comments-active::after {
+  border: 1px solid #7264d6;
+   border-top-color: #fff;
+   border-left-color: #fff;
+}
+
+.testimonial__comments:hover {
+   border: 1px solid #7264d6;
+
+}
+
+.testimonial__comments:hover::after {
+   border: 1px solid #7264d6;
+   border-top-color: #fff;
+   border-left-color: #fff;
 }
 
 .testimonial__item {
