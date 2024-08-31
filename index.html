@@ -101,10 +101,7 @@
       rel="stylesheet"
     />
     <!-- animation -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   </head>
   <body>
     <!-- =====================  Header ================= -->
@@ -150,7 +147,7 @@
     <section id="hero" class="hero">
       <div class="container">
         <div class="hero__inner">
-          <section class="hero__content">
+          <section class="hero__content" data-aos="fade-up" data-aos-easing="ease-in-out"  data-aos-duration="1000" data-aos-once="true">
             <p class="section-desc-title">Digital Smart Wallet</p>
             <h1 class="hero__heading">
               Digital <strong>Payment</strong> For Everyone.
@@ -179,7 +176,7 @@
               *We’ll respect the inbox and never share your email.
             </p>
           </section>
-          <div class="hero__media">
+          <div class="hero__media" data-aos="fade-left">
             <figure class="hero__images">
               <img
                 src="./assets/img/Mobile Screen.png"
@@ -187,17 +184,17 @@
                 class="hero__img"
               />
             </figure>
-            <div class="deposite">
+            <div class="deposite" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="50">
               <img src="./assets/img/Deposite.svg" alt="deposite" />
               <div class="deposite__strong">Deposite</div>
               <p class="deposite__money">$32000</p>
             </div>
-            <div class="interest">
+            <div class="interest" data-aos="zoom-in">
               <div class="interest__percent">0%</div>
               <p class="interest__text">Interest</p>
             </div>
 
-            <div class="secured">
+            <div class="secured" data-aos="zoom-in">
               <figure>
                 <img
                   src="./assets/img/SECURED.svg"
@@ -740,11 +737,13 @@
             <!-- blog__item-1 -->
             <article class="blog__item blog__item-active">
               <figure class="blog__images">
-                <img
-                  src="./assets/img/Blog_1.png"
-                  alt="blog"
-                  class="blog__img"
-                />
+                <a href="#!">
+                  <img
+                    src="./assets/img/Blog_1.png"
+                    alt="blog"
+                    class="blog__img"
+                  />
+                </a>
               </figure>
               <div class="blog__item-content">
                 <p class="blog__item-date">July 03, 2022</p>
@@ -761,11 +760,13 @@
             <!-- blog__item-2 -->
             <article class="blog__item">
               <figure class="blog__images">
-                <img
-                  src="./assets/img/Blog_2.png"
-                  alt="blog"
-                  class="blog__img"
-                />
+                <a href="#!">
+                  <img
+                    src="./assets/img/Blog_2.png"
+                    alt="blog"
+                    class="blog__img"
+                  />
+                </a>
               </figure>
               <div class="blog__item-content">
                 <p class="blog__item-date">July 03, 2022</p>
@@ -779,11 +780,13 @@
             <!-- blog__item-3 -->
             <article class="blog__item">
               <figure class="blog__images">
-                <img
-                  src="./assets/img/Blog_3.png"
-                  alt="blog"
-                  class="blog__img"
-                />
+                <a href="#!">
+                  <img
+                    src="./assets/img/Blog_3.png"
+                    alt="blog"
+                    class="blog__img"
+                  />
+                </a>
               </figure>
               <div class="blog__item-content">
                 <p class="blog__item-date">July 03, 2022</p>
@@ -797,11 +800,13 @@
             <!-- blog__item-4 -->
             <article class="blog__item">
               <figure class="blog__images">
-                <img
-                  src="./assets/img/Blog_4.png"
-                  alt="blog"
-                  class="blog__img"
-                />
+                <a href="#!">
+                  <img
+                    src="./assets/img/Blog_4.png"
+                    alt="blog"
+                    class="blog__img"
+                  />
+                </a>
               </figure>
               <div class="blog__item-content">
                 <p class="blog__item-date">July 03, 2022</p>
@@ -906,7 +911,9 @@
       <div class="container">
         <div class="footer__header">
           <div class="footer__logo">
-            <a href="#"><img src="./assets/icon/Logo.png" alt="logo" class="footer__img" /></a>
+            <a href="#"
+              ><img src="./assets/icon/Logo.png" alt="logo" class="footer__img"
+            /></a>
           </div>
           <!-- footer__nav-1 -->
           <div class="footer__nav">
@@ -959,7 +966,10 @@
           </div>
         </div>
         <div class="footer__hotline-row">
-          <a href="mailto:email@gmail.com" class="footer__hl footer__hotline-mail">
+          <a
+            href="mailto:email@gmail.com"
+            class="footer__hl footer__hotline-mail"
+          >
             email@gmail.com
           </a>
           <a href="tel:(123) 456-7890" class="footer__hl footer__hotline-sdt">
@@ -971,17 +981,9 @@
         <p class="footer__copyright">© 2020 Ligft Media All rights reserved.</p>
       </div>
     </footer>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      new WOW({
-        animateClass: "animate__animated",
-      }).init();
+      AOS.init();
     </script>
   </body>
 </html>
