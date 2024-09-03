@@ -775,7 +775,7 @@ li.payments__items {
     top: 260px;
     right: -140px;
     animation-name: scale__wallet;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 2s;
 
